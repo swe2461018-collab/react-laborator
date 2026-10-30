@@ -1,0 +1,135 @@
+
+/* СУРГАЛТ ХУУДАС */
+
+.surgalt-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* СУРГАЛТЫН ТАНИЛЦУУЛГА */
+
+.surgalt-intro h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.surgalt-intro p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* СУРГАЛТЫН ХӨТӨЛБӨРИЙН ГАРЧИГ */
+
+.training-list {
+  margin-top: 50px;
+}
+
+.training-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ЗУРАГТАЙ 3 БАГАНАНД ХУВААХ */
+
+.training-grid {
+  display: grid;
+
+  /* 3 багана үүсгэнэ */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* СУРГАЛТЫН ХЭЛБЭРИЙН МЭДЭЭЛЭЛ */
+
+.training-card {
+  position: relative;
+
+  /* Зураг болон текстийг нэг блок болгоно */
+  display: block;
+
+  height: 260px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+/* Зураг дээр mouse очиход */
+
+.training-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ЗУРАГ */
+
+.training-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.4s;
+}
+
+/* Mouse зураг дээр очиход томорно */
+
+.training-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ЗУРГИЙН ДЭЭРХ ХАР ДАВХАРГА */
+
+.training-overlay {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 25px 20px;
+
+  /* Зургийн доод хэсгийг бараан болгоно */
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.85)
+  );
+
+  color: white;
+}
+
+/* ЗУРГАН ДЭЭРХ ГАРЧИГ */
+
+.training-overlay h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: white;
+
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .training-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+}

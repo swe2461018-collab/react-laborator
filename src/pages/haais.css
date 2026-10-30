@@ -1,0 +1,43 @@
+/* ХААИС ХУУДАС */
+.haais-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.haais-intro h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.haais-intro p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.haais-intro img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.haais-schools {
+  margin-top: 50px;
+}
+
+.haais-schools h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.haais-schools ul {
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.haais-schools li {
+  margin-bottom: 10px;
+}

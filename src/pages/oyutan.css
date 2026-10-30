@@ -1,11 +1,78 @@
 .oyutan-page {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 40px 20px;
+  background: #f1f5f9;
+  color: #1e293b;
 }
-
-.oyutan-page h1 {
+.student-header { text-align: center; margin-bottom: 30px; }
+.student-label {
+  display: inline-block;
+  color: #047857;
+  background: #d1fae5;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.student-header h1 { margin: 18px 0 10px; font-size: 32px; color: #0f172a; }
+.student-header p { color: #64748b; line-height: 1.6; }
+.student-card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 35px 25px;
   text-align: center;
-  margin-bottom: 25px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
-
+.student-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dbeafe;
+  border-radius: 50%;
+  font-size: 36px;
+}
+.student-card h2 { margin: 10px 0; font-size: 24px; color: #1e3a8a; }
+.student-description { color: #64748b; margin-bottom: 8px; }
+.student-count { margin: 10px 0; color: #047857; font-size: 64px; font-weight: bold; overflow-wrap: anywhere; }
+.student-status { min-height: 24px; color: #64748b; font-size: 14px; line-height: 1.6; }
+.student-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+.student-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font: bold 14px Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.student-btn:hover:not(:disabled) { transform: translateY(-2px); }
+.student-card button:focus-visible { outline: 3px solid #c58a15; outline-offset: 4px; }
+.student-card .add-btn { background: #059669; }
+.student-card .add-btn:hover { background: #047857; }
+.student-card .remove-btn { background: #dc2626; }
+.student-card .remove-btn:hover:not(:disabled) { background: #b91c1c; }
+.student-card button:disabled { opacity: 0.4; cursor: not-allowed; }
+.student-card .reset-btn {
+  margin-top: 18px;
+  padding: 9px 16px;
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+.student-card .reset-btn:hover:not(:disabled) { background: #cbd5e1; }
+@media (max-width: 480px) {
+  .oyutan-page { padding: 25px 14px; }
+  .student-header h1 { font-size: 26px; }
+  .student-card { padding: 28px 16px; }
+  .student-count { font-size: 52px; }
+  .student-actions { flex-direction: column; }
+  .student-btn { width: 100%; }
+}

@@ -3,7 +3,7 @@ import "./App.css"
 
 // React Router-ийн шаардлагатай компонентууд
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom"
@@ -33,7 +33,7 @@ import HolbooBarih from "./pages/HolbooBarih"
 // Үндсэн App component
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       {/* Веб сайтын бүх хэсгийг нэг div дотор багцална */}
       <div className="website">
@@ -80,7 +80,7 @@ function App() {
 
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

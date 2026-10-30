@@ -13,7 +13,7 @@ function Haais() {
           Сургалт, эрдэм шинжилгээ, үйлдвэрлэлийн уялдаа холбоог
           ханган мэргэжилтэн бэлтгэдэг.
         </p>
-        <img src="/banner.jpg" alt="Хөдөө аж ахуйн их сургууль" />
+        <img src={import.meta.env.BASE_URL + "banner.jpg"} alt="Хөдөө аж ахуйн их сургууль" />
       </section>
 
       {/* БҮРЭЛДЭХҮҮН СУРГУУЛЬ */}
@@ -33,5 +33,6 @@ function Haais() {
 }
 
 export default Haais
+
 
 

@@ -54,7 +54,7 @@ export function Surgalt() {
             rel="noreferrer"
           >
             <img
-              src="/medee.jpg"
+              src={import.meta.env.BASE_URL + "medee.jpg"}
               alt="Бакалаврын сургалт"
             />
 
@@ -74,7 +74,7 @@ export function Surgalt() {
             rel="noreferrer"
           >
             <img
-              src="/news2.jpg"
+              src={import.meta.env.BASE_URL + "news2.jpg"}
               alt="Магистр, Докторын сургалт"
             />
 
@@ -94,7 +94,7 @@ export function Surgalt() {
             rel="noreferrer"
           >
             <img
-              src="/news3.jpg"
+              src={import.meta.env.BASE_URL + "news3.jpg"}
               alt="Цахим сургалт"
             />
 
@@ -114,6 +114,7 @@ export function Surgalt() {
 
 // Surgalt component-ийг export хийж байна
 export default Surgalt
+
 
 
 

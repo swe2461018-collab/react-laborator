@@ -14,7 +14,7 @@
 
         {/* ХААИС-ийн лого */}
         <img 
-          src="/logo_muls.png" 
+          src={import.meta.env.BASE_URL + "logo_muls.png"} 
           alt="ХААИС лого" 
           className="muls-logo" 
         />

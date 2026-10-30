@@ -16,7 +16,7 @@ export function Home() {
         {/* ЧУХАЛ ХОЛБООС */}
         <section className="important">
           <div className="important-image">
-            <img src="/medee.jpg" alt="ХААИС-ийн зураг" />
+            <img src={import.meta.env.BASE_URL + "medee.jpg"} alt="ХААИС-ийн зураг" />
           </div>
 
           <div className="important-content">
@@ -74,19 +74,19 @@ export function Home() {
           <div className="news-list">
            <NewsCard
             title="ХААИС-ийн шинэ мэдээлэл"
-            image="/news1.jpg"
+            image={import.meta.env.BASE_URL + "news1.jpg"}
             description="Хөдөө аж ахуйн их сургуулийн үйл ажиллагаа, шинэ мэдээ мэдээлэл."
             date="2026.09.06"
           />
             <NewsCard
             title="Сургалт, эрдэм шинжилгээний үйл ажиллагаа"
-            image="/news2.jpg"
+            image={import.meta.env.BASE_URL + "news2.jpg"}
             description="Сургалт болон эрдэм шинжилгээний үйл ажиллагааны талаарх мэдээлэл."
             date="2026.09.05"
             />
             <NewsCard
             title="Оюутны үйл ажиллагаа"
-            image="/news3.jpg"
+            image={import.meta.env.BASE_URL + "news3.jpg"}
             description="Оюутнуудад зориулсан үйл ажиллагаа, арга хэмжээний мэдээлэл."
             date="2026.09.04"
             />

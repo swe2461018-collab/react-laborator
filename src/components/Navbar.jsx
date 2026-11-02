@@ -39,6 +39,10 @@ function Navbar() {
         ОЮУТАН
       </NavLink>
 
+      <NavLink to="/burtgeh">
+        БҮРТГЭХ
+      </NavLink>
+
       {/* Ректорын ажлын алба */}
       <NavLink to="/rektoryn-ajlyn-alba">
         РЕКТОРЫН АЖЛЫН АЛБА

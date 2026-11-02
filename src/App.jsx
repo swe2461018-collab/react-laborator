@@ -29,6 +29,7 @@ import HamtynAjillagaa from "./pages/HamtynAjillagaa"
 import Oyutan from "./pages/Oyutan"
 import RektorynAjlynAlba from "./pages/RektorynAjlynAlba"
 import HolbooBarih from "./pages/HolbooBarih"
+import StudentForm from "./pages/StudentForm"
 
 // Үндсэн App component
 function App() {
@@ -59,6 +60,7 @@ function App() {
           <Route path="/hogjliin-bodlogo" element={<HogjliinBodlogo />} />
           <Route path="/hamtyn-ajillagaa" element={<HamtynAjillagaa />} />
           <Route path="/oyutan" element={<Oyutan />} />
+          <Route path="/burtgeh" element={<StudentForm />} />
           <Route path="/rektoryn-ajlyn-alba" element={<RektorynAjlynAlba />} />
           <Route path="/holboo-barih" element={<HolbooBarih />} />
 

@@ -1,0 +1,30 @@
+.student-list-page { padding: 40px 20px; }
+.student-container { max-width: 1150px; margin: 0 auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.student-container h1 { color: #174b35; font-size: 26px; text-align: center; margin: 0 0 25px; }
+.student-container .student-summary { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: #edf7f1; color: #174b35; padding: 16px 20px; margin-bottom: 22px; border-radius: 8px; border-left: 4px solid #198754; }
+.student-container .student-summary strong { font-size: 18px; margin-left: 5px; }
+.student-container label { display: block; margin-bottom: 8px; }
+.student-search { display: block; width: 100%; padding: 13px 16px; margin-bottom: 22px; border: 1px solid #d5ded8; border-radius: 8px; font: inherit; }
+.student-container :is(input,button,.student-table-scroll):focus-visible { outline: 3px solid #198754; outline-offset: 3px; }
+.student-table-scroll { overflow-x: auto; }
+.student-table { width: 100%; min-width: 750px; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 14px; }
+.student-table th { background: #176b45; color: white; padding: 16px 14px; white-space: nowrap; }
+.student-table td { padding: 15px 14px; color: #35443b; border-bottom: 1px solid #e8eee9; line-height: 1.5; }
+.student-table th:first-child { border-top-left-radius: 7px; }
+.student-table th:last-child { border-top-right-radius: 7px; }
+.student-table tbody tr:nth-child(even) { background: #f6faf7; }
+.student-table tbody tr:hover { background: #eaf5ee; }
+.student-container .detail-button { background: #198754; color: white; border: none; padding: 9px 15px; border-radius: 6px; cursor: pointer; font: inherit; white-space: nowrap; }
+.student-container .detail-button:hover { background: #11663e; }
+.student-detail { margin-top: 28px; padding: 25px; background: #f1f8f4; border: 1px solid #cce2d4; border-radius: 10px; overflow-wrap: anywhere; }
+.student-detail h2 { color: #174b35; font-size: 20px; margin: 0 0 18px; }
+.student-detail p { padding: 10px 0; margin: 0; border-bottom: 1px solid #dcebe1; line-height: 1.6; }
+.student-container .close-button { background: #64746a; color: white; padding: 10px 22px; border: none; border-radius: 6px; cursor: pointer; margin-top: 18px; font: inherit; }
+.student-container .close-button:hover { background: #45554a; }
+.student-container .error-message { color: #b91c1c; margin-top: 15px; }
+@media (max-width: 700px) {
+  .student-list-page { padding: 20px 14px; }
+  .student-container { padding: 15px; }
+  .student-container h1 { font-size: 21px; }
+  .student-container .student-summary { font-size: 13px; }
+}

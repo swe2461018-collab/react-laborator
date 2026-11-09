@@ -43,6 +43,10 @@ function Navbar() {
         БҮРТГЭХ
       </NavLink>
 
+      <NavLink to="/student-list">
+        ОЮУТНЫ ЖАГСААЛТ
+      </NavLink>
+
       {/* Ректорын ажлын алба */}
       <NavLink to="/rektoryn-ajlyn-alba">
         РЕКТОРЫН АЖЛЫН АЛБА

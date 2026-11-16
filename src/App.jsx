@@ -31,6 +31,9 @@ import RektorynAjlynAlba from "./pages/RektorynAjlynAlba"
 import HolbooBarih from "./pages/HolbooBarih"
 import StudentForm from "./pages/StudentForm"
 import StudentList from "./components/StudentList"
+import Register from "./pages/Register"
+import Login from "./pages/Login"
+import Profile from "./pages/Profile"
 
 // Үндсэн App component
 function App() {
@@ -63,6 +66,9 @@ function App() {
           <Route path="/oyutan" element={<Oyutan />} />
           <Route path="/burtgeh" element={<StudentForm />} />
           <Route path="/student-list" element={<StudentList />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/rektoryn-ajlyn-alba" element={<RektorynAjlynAlba />} />
           <Route path="/holboo-barih" element={<HolbooBarih />} />
 

@@ -1,4 +1,9 @@
- function Header() {
+import { useContext } from "react"
+import { Link } from "react-router-dom"
+import { AuthContext } from "./AuthContext"
+
+function Header() {
+  const { user, logout } = useContext(AuthContext)
 
   // Их сургуулийн монгол нэр
   const universityName = "ХӨДӨӨ АЖ АХУЙН ИХ СУРГУУЛЬ"
@@ -43,6 +48,18 @@
          ТӨГСӨГЧИД
        </a>
 
+        {user ? (
+          <>
+            <span className="auth-greeting">Сайн байна уу, {user.firstname}!</span>
+            <Link to="/profile">Миний мэдээлэл</Link>
+            <button type="button" className="auth-logout" onClick={logout}>Гарах</button>
+          </>
+        ) : (
+          <>
+            <Link to="/login">НЭВТРЭХ</Link>
+            <Link to="/register">БҮРТГҮҮЛЭХ</Link>
+          </>
+        )}
       </div>
 
 
